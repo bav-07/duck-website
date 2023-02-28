@@ -1,0 +1,174 @@
+/* *, ::before, ::after {
+    padding: 0;
+    margin: 0;
+} */
+
+body, h1, h2 {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(255, 212, 133);
+}
+
+.padded_content {
+    padding: 2rem 10%;
+}
+
+main {
+    background-color: purple;
+}
+
+footer {
+    background-color: rgb(255, 246, 84);
+}
+
+.hero {
+    background-color: black;
+}
+
+.products {
+    background-color: rgb(183, 253, 183);
+}
+
+.contact {
+    background-color: rgb(187, 222, 234);
+}
+
+.card.card--pink {
+    background-color: lightpink;
+}
+
+#card--pink {
+    background-color: lightpink;
+}
+
+.card {
+    background-color: white;
+    border: 3px solid black;
+    width: fit-content;
+}
+
+.card img {
+    width: 250px;
+}
+
+.footer__logo {
+    width: 150px;
+}
+
+/* .card:hover {
+    background-color: yellow;
+} */
+
+button, input[type="submit"] {
+    background-color: rgb(184, 184, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    /* margin: 10px; */
+    width: 6rem; 
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: yellow;
+    transform: scale(1.1);
+    border-style: dashed;
+}
+
+button:active, input[type="submit"]:active {
+    background-color: rgb(200, 200, 180);
+    transform: scale(1);
+}
+
+/* ==HEADER============= */
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header > h1 {
+    width: 40%;
+}
+
+.header > nav {
+    /* grows this element to the remainder of the flex container it is in */
+    flex-grow: 1;
+    display: flex;
+    justify-content:space-around;
+}
+
+/* ==HERO============= */
+
+.hero {
+    height: 500px;
+    background-image: url(https://images.unsplash.com/photo-1620573083867-730048a6cb33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80);   
+    background-size: cover;
+    background-position: center;
+}
+
+/* ==PRODUCTS============= */
+
+.products {
+    background-color: rgb(183, 253, 183);
+
+}
+
+.products__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* ==CONTACT============= */
+
+.contact {
+    background-color: rgb(187, 222, 234);
+    display: flex;
+}
+
+.contact__form {
+    display: flex;
+    align-items: center;
+}
+
+.contact__text {
+    width: 50%;
+}
+
+.contact__form > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact input {
+    margin: 10px;
+}
+
+/* ==FOOTER============= */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.1fr;
+}
+
+.footer nav, .footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer__right {
+    grid-column-start: 4;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
